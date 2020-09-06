@@ -1,0 +1,44 @@
+Schema SQL
+1 create table test3(usn integer primary key,name varchar(10),phonenumber integer,branch varchar(3));
+2 insert into test3 value(30,'ashwini',7564,'CS');
+3 insert into test3 value(36,'shreya',6789,'IS');
+4 insert into test3 value(52,'roshni',7689,'ME');
+5 insert into test3 value(62,'ashwitha',9858,'EC');
+
+
+Query SQL
+1 select * from test3;​Results
+**Schema (MySQL v5.7)**
+
+    create table test3(usn integer primary key,name varchar(10),phonenumber integer,branch varchar(3));
+                                                                                     insert into test3 value(30,'ashwini',7564,'CS');
+    insert into test3 value(36,'shreya',6789,'IS');
+    insert into test3 value(52,'roshni',7689,'ME');
+    insert into test3 value(62,'ashwitha',9858,'EC');
+    
+
+---
+
+**Query #1**
+
+    select * from test3;
+
+| usn | name     | phonenumber | branch |
+| --- | -------- | ----------- | ------ |
+| 30  | ashwini  | 7564        | CS     |
+| 36  | shreya   | 6789        | IS     |
+| 52  | roshni   | 7689        | ME     |
+| 62  | ashwitha | 9858        | EC     |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/ayGfsFz79ompW6FkHyv4HM/0)
+Copy as Markdown
+Query #1 Execution time: 0ms
+usn	name	phonenumber	branch
+30	ashwini	7564	CS
+36	shreya	6789	IS
+52	roshni	7689	ME
+62	ashwitha	9858	EC
+
+
